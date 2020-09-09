@@ -1,10 +1,13 @@
 {% extends "base.html" %}
-
+{% load static %}
 
 {% block content %}
-<img src="{{ page.image.url }}" class="image-fluid">
-<div class="container">
 
+
+<div class="container">
+<div class="masthead" style="background-image: url({{ page.image.url }})
+no-repeat center center fixed,
+  background-size: cover;"></div>
 <h2 class="text-center uppercase">
     {{ page.title }}
 </h2>
