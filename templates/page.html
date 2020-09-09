@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<img src="{{ page.image.url }}" class="image-fluid">
+<div class="container">
+
+<h2 class="text-center uppercase">
+    {{ page.title }}
+</h2>
+<h4 class="text-center uppercase">
+{{ page.subtitle }}
+</h4>
+<article>
+    {{ page.article|safe }}
+</article>
+</div>
+{% endblock %}
