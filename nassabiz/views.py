@@ -12,7 +12,7 @@ def index(request):
         'nav':nav
     }
 
-    return render(request, 'index.html', context)
+    return render(request, 'page/index.html', context)
 
 
 def pages(request, slug):
@@ -22,4 +22,4 @@ def pages(request, slug):
         "page":page_content,
         "nav": nav
     }
-    return render(request, 'page.html', context)
+    return render(request, 'page/page.html', context)

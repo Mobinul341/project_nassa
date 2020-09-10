@@ -1,8 +1,10 @@
 from django.contrib import admin
+from django.contrib.auth.models import Group
 from .models import BlogModel, NavModel, PrimaryNav, SecondNav, NavMenuModel
 
 # Register your models here.
 admin.site.register(BlogModel)
+
 
 class SubnavInline(admin.TabularInline):
     model = SecondNav
@@ -21,3 +23,10 @@ admin.site.register(PrimaryNav, PrimaryNavAdmin)
 class NavMenuAdmin(admin.ModelAdmin):
     list_display = ('name', 'slug', 'parent_menu', 'parent')
 
+
+
+
+#Panel design
+admin.site.unregister(Group)
+admin.site.site_header = "NASSA Group Admin Panel"
+admin.site.site_title = "NASSA admin"
