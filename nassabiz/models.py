@@ -8,7 +8,7 @@ class BlogModel(models.Model):
     subtitle = models.CharField(max_length=200, blank=True, null=True)
     article = RichTextField(blank = True, null = True)
     slug = models.SlugField(max_length=200,blank = True, null = True )
-    image = models.ImageField(upload_to ='img', blank = True, null = True )
+    image = models.FileField(upload_to ='img', blank = True, null = True )
     
 
     def __str__(self):

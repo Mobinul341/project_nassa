@@ -1,4 +1,6 @@
 {
     "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true
+    "python.linting.enabled": true,
+    "git.ignoreLimitWarning": true,
+    "python.pythonPath": "C:\\Users\\Razzak\\.virtualenvs\\nassaDOTcomDOTbd-Sh03oEpM\\Scripts\\python.exe"
 }

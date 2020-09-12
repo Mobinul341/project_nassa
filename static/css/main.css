@@ -8,10 +8,12 @@
     color: #000;
 }
 
+
+
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
     color: #fff;
-    background-color: #fff;
+    background-color: rgba(36, 33, 33, 0.315) !important;
 }
 
 .navbar .navbar-brand {
@@ -50,3 +52,4 @@
         color: #555;
     }
 }
+

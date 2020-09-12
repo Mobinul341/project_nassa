@@ -4,7 +4,7 @@ from .models import BlogModel, NavModel, PrimaryNav, SecondNav, NavMenuModel
 # Create your views here.
 
 def index(request):
-    image = BlogModel.objects.all(),
+    image = BlogModel.objects.filter(['title', 'image'])
     nav = NavModel.objects.filter()
     context = {
         'title':'Home',

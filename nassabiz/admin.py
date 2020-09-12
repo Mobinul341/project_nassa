@@ -30,3 +30,4 @@ class NavMenuAdmin(admin.ModelAdmin):
 admin.site.unregister(Group)
 admin.site.site_header = "NASSA Group Admin Panel"
 admin.site.site_title = "NASSA admin"
+
