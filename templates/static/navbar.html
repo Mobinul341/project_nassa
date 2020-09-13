@@ -1,37 +1,38 @@
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="{% url 'index' %}">NASSA GROUP</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav mr-auto">
 
-      {% for nav in nav %}
-      {% if nav.primary %}
-      {% if nav.children.all.count > 0 %}
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          {{ nav.name }}
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          {% for sub in nav.children.all %}
-          <a class="dropdown-item" href="{{ sub.slug }}">{{ sub.name }}</a>
-          {% endfor %}
-        </div>
-      </li>
-      {% else %}
-      
-      <li class="nav-item">
-        <a href="{{ nav.slug }}" class="nav-link">
-          {{ nav.name }}
-        </a>
-      </li>
 
-      {% endif %}
-      {% endif %}
-      {% endfor %}
 
-    </ul>
-  </div>
+ <header id="header" class="site-header" role="banner">
+  <h1 class="logo"><a href="{% url 'index' %}" title="NASSA GROUP" rel="home">NASSA GROUP</a></h1>
+<nav id="site-navigation" class="main-navigation" role="navigation">
+<div class="menu-main-nav-container">
+<ul id="menu-main-nav" class="nav-menu">
+  {% for nav in nav %}
+  {% if nav.primary %}
+  {% if nav.children.all.count > 0 %}
+<li id="menu-item-673" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-673"><a href="{{ nav.slug }}">{{ nav.name }}</a>
+<ul class="sub-menu">
+  {% for sub in nav.children.all %}
+<li id="menu-item-372" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-372"><a href="{{ sub.slug }}">{{ sub.name }}</a></li>
+{% endfor %}
+</ul>
+
+</li>
+
+
+{% else %}
+<li id="menu-item-673" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-673"><a href="{{ nav.slug }}">{{ nav.name }}</a>
+</li>
+
+
+{% endif %}
+{% endif %}
+{% endfor %}
+
+
+</ul>
+</div>
 </nav>
+
+</header>                                  
+</div>

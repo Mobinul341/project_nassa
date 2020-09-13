@@ -1,4 +1,4 @@
-/* html {
+html {
   background-color: #f7f7f7;
   overflow-x: hidden;
 }
@@ -371,7 +371,7 @@ a:hover .caret-white {
 .dropdown-menu > .active > a:focus {
   background-image: none;
   filter: none;
-  background-color: #1f1d1d25 ;
+  background-color: #f1f1f1 !important;
   color: #717171;
 }
 .dropdown-header {
@@ -3239,4 +3239,4 @@ fieldset[disabled] .btn-gplus.active {
   .hidden-xs.show {
     display: inherit !important;
   }
-} */
+}
