@@ -2,7 +2,7 @@ from django.db import models
 from .navmanager import PrimaryNavManager, SecondaryNavManager
 from ckeditor.fields import RichTextField
 # Create your models here.
-
+#RichTextField(blank = True, null = True) 
 class BlogModel(models.Model):
     title = models.CharField(max_length=200)
     subtitle = models.CharField(max_length=200, blank=True, null=True)

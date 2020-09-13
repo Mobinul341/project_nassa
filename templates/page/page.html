@@ -2,81 +2,38 @@
 {% load static %}
 
 {% block content %}
-  
+
 <div id="main">
-				
+
   <div id="primary" class="site-content">
-  <div id="content" role="main">
-      
-          <div class="main-image">
-             <img src="{{ page.image.url }}" style="inline auto 100% 0px -113px"/>  </div>
-          <div class="page-info">
-              <h2 class="page-heading">{{ page.title }}</h2>
-              <div class="page-descr"><div class="twocolumns">{{ page.subtitle }}</div>
-                  <div class="twocolumns"></div>
-                  <div class="twocolumns"></div>
-              </div>
-          </div>			
-    
-          <div class="page-content" style="background-color: #fff;">          
-<article>  
-  
-  {{ page.article|safe }}
+    <div id="content" role="main">
 
-<!-- <div class="page-content-holder">
-<div class="page-content">
-<div class="page-subheading-holder main-heading">
-<div class="page-subheading" style="color: #bd7d59">We believe in the power of industry to build a bright future for Bangladesh</div>
-</div>
+      <div class="main-image">
+        <img src="{{ page.image.url }}" style="inline auto 100% 0px -113px" />
+      </div>
+      <div class="page-info">
+        <h2 class="page-heading">{{ page.title }}</h2>
+        <div class="page-descr"><div class="twocolumns">{{ page.subtitle }}</div>
+          <div class="twocolumns"></div>
+          <div class="twocolumns"></div>
+        </div>
+      </div>
 
-<div class="twocolumns">
-<div class="left-column column">
-<div class="column-holder">
-<p>NASSA Group Limited of Industries was founded in 1990 by noted business <strong>entrepreneur</strong> Mr Nazrul Islam Mazumder. Under his leadership, the group has expanded rapidly to achieve status as one of Bangladesh&rsquo;s largest industrial conglomerates and one of the most significant investors in the country&rsquo;s economy.</p>
+      <div class="page-content" style="background-color: #fff;">
 
-<p>NASSA Group Limited has interests in Garment Manufacturing, Banking, Real Estate, Stock Brokering, Education and Travel and most importantly Corporate Social Responsibility.</p>
 
-<p>NASSA Group&rsquo;s ready made garment and textile manufacturing division has achieved globally respected status as a supplier of yarns, textiles and ready-made garments for branded and private label clients worldwide. The manufacturing operation boasts 1.1 million sq. ft. of production space, across which <strong>more</strong> than 30,000 skilled workers operate in 34 vertically owned factories.</p>
+        {{ page.article|safe }}
 
-<p>EXIM Bank Limited has been a crucial part of the corporate expansion and has fast grown to achieve status as a pioneering financial establishment, dedicated to the socio-economic development of Bangladesh and its people.</p>
 
-<p>NASSA Properties Limited has been established with the aim to develop prime commercial properties in the heart of Dhaka. Along with the commercial side of our real estate business, we have RANS Real Estate Limited which is a driving force in residential property development for <strong>home owners</strong> seeking modern housing solutions in Dhaka, Bangladesh.</p>
 
-<p>ANW Dhaka Limited is an accredited member of the Dhaka stock exchange providing robust ethical trading opportunities in global stocks and shares. ANW Dhaka exists to provide beneficial trading opportunities for clients and organisations looking to trade in stocks and shares in a sustainable and risk controlled environment.</p>
 
-<p>NASSA Group is profoundly committed to the vital role of education in Bangladesh in achieving socio-economic, financial and commercial growth.</p>
 
-<p>EXIM Agricultural University provides agricultural training and scholarships for the young people of Bangladesh. The university will train a new generation of Bangladeshis in modern agricultural techniques that will equip them to support themselves, their families, communities and Bangladesh&rsquo;s economy as a whole.</p>
-
-<p><a class="link-download" href="http://nassagroup.org/app/webroot/js/ckfinder/userfiles/files/NASSA COMPANY PROFILE-mens 2 2014 ( 2nd edited).pdf">Download the brochure &ndash; Nassa Group (Full script for Nassa Group)</a></p>
-</div>
-</div>
-
-<div class="right-column column">
-<div class="column-holder">
-<p><img alt="" class="alignnone size-full wp-image-890" src="js/ckfinder/userfiles/images/web-logo.png" style="height:264px; width:500px" /></p>
-
-<p><strong>Corporate Social Responsibility &amp; Sustainability</strong></p>
-
-<p>NASSA Group is committed to achieving a sustainable impact on Bangladesh&rsquo;s social-economic growth by addressing the welfare of our people and communities through a number of education, healthcare and environment initiatives.</p>
-
-<p>Sustainability: The key to a bright tomorrow for Bangladesh. NASSA Group is fully committed to the responsibility of driving the sustainability of the group&rsquo;s operations, client base, stakeholders and surrounding communities and environment.</p>
-
-<p><img alt="" class="alignnone size-full wp-image-453" src="js/ckfinder/userfiles/images/img023.jpg" style="height:167px; width:546px" /></p>
-</div>
-</div>
-</div>
-</div>
-</div> -->
-
-</article>
-</div>                            
+      </div><!-- #main .wrapper -->
+    </div><!-- #page -->
   </div>
 </div>
 
-            </div><!-- #main .wrapper -->
-      </div><!-- #page -->
-  </div>
-</div>
+
+
 
 {% endblock %}
