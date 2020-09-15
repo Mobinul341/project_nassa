@@ -1,7 +1,8 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
+
 from .models import BlogModel, NavModel, PrimaryNav, SecondNav, NavMenuModel
 
-# Create your views here.
+
 
 def index(request):
     image = BlogModel.objects.filter(['title', 'image'])
@@ -13,6 +14,22 @@ def index(request):
     }
 
     return render(request, 'page/index.html', context)
+
+#Redirected view 
+'''
+def craftedRedirect(request):
+    url = 'page/index'
+    return redirect(url, permanent=True)
+'''
+
+def craftedRedirect(request)
+    try:
+        url = 'page/index'
+        return redirect(url, is_permanent=True, status_code=302)
+    except url.DoesNotExist:
+        return render(request, 'page/index.html', {})
+
+
 
 
 def pages(request, slug):
