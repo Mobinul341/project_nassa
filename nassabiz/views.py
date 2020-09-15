@@ -16,18 +16,12 @@ def index(request):
     return render(request, 'page/index.html', context)
 
 #Redirected view 
-'''
+
 def craftedRedirect(request):
     url = 'page/index'
     return redirect(url, permanent=True)
-'''
 
-def craftedRedirect(request)
-    try:
-        url = 'page/index'
-        return redirect(url, is_permanent=True, status_code=302)
-    except url.DoesNotExist:
-        return render(request, 'page/index.html', {})
+
 
 
 
