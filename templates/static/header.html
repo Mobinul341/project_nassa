@@ -17,13 +17,14 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=1000">
 		<title>NASSA GROUP</title>
-
-		<link rel="stylesheet" type="text/css" href="{% static
-			'css/frontend/jquery.css' %}" />
-		<link rel="stylesheet" type="text/css" href="{% static
-			'css/frontend/reveal.css' %}" />
-		<link rel="stylesheet" type="text/css" href="{% static
-			'css/frontend/css_002.css' %}" />
+		
+		<link rel="stylesheet" type="text/css" href="{% static 'css/font.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/app.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/custom.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/frontend/jquery.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/frontend/reveal.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/frontend/css_002.css' %}" />
 
 		<script type="text/javascript" src="{% static 'js/frontend/jquery_002.js' %}"></script>
 		<script type="text/javascript" src="{% static 'js/frontend/jquery_003.js' %}"></script>
@@ -50,8 +51,7 @@
 			significant investors in the country’s economy.">
 
 
-		<link rel="canonical" href="{% url 'index' %}">
-		<link rel="shortlink" href="{% url 'index' %}">
+	
 		<meta name="description" content="Since 1990 NASSA Group has led the way in
 			ethical and sustainable garment manufacturing, industrial and financial
 			services on the global stage."><style type="text/css">/* =Responsive Map fix
@@ -84,10 +84,12 @@
 										menu-item-object-page menu-item-390"><a
 											href='http://mail.nassagroup.org/webmail/src/login.php'
 											target='_blank'>webmail</a></li>
-
+									
+									<!-- <li id="menu-item-top" class="menu-item menu-item-type-post_type
+										menu-item-object-page menu-item-390"><a href="{# url 'page/press/<str/press_id>' #}">Press</a></li> -->
 									
 									<li id="menu-item-top" class="menu-item menu-item-type-post_type
-										menu-item-object-page menu-item-390"><a href="#">CONTACT</a></li>
+										menu-item-object-page menu-item-390"><a href="/page/contact">CONTACT</a></li>
 
 									<li id="menu-item-social"><a
 											href="https://www.facebook.com/pages/NASSA-Group/702620829759915"><img

@@ -3,8 +3,11 @@
 
 
  <header id="header" class="site-header" role="banner">
-  <h1 class="logo"><a href="{% url 'index' %}" title="NASSA GROUP" rel="home">NASSA GROUP</a></h1>
+  <h1 class="logo"><a href="/page/index" title="NASSA GROUP" rel="home">NASSA GROUP</a></h1>
 <nav id="site-navigation" class="main-navigation" role="navigation">
+<img class="nav-btn" src="{% static 'img/menuicon.jpg' %}"/>
+
+
 <div class="menu-main-nav-container">
 <ul id="menu-main-nav" class="nav-menu">
   {% for nav in nav %}

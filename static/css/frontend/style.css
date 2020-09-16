@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'helveticaneuemedium';
     src: url('../../fonts/12_pt._helvetica_65_medium___06472-webfont.eot');
-    src: url('../../fonts/12_pt._helvetica_65_medium___06472-webfont.eot?#iefix') format('embedded-opentype'),
+    src: url('../../fonts/12_pt._helvetica_65_medium___06472-webfontd41dd41d.eot?#iefix') format('embedded-opentype'),
          url('../../fonts/12_pt._helvetica_65_medium___06472-webfont.woff') format('woff'),
          url('../../fonts/12_pt._helvetica_65_medium___06472-webfont.ttf') format('truetype'),
          url('../../fonts/12_pt._helvetica_65_medium___06472-webfont.svg#helveticaneuemedium') format('svg');
@@ -11,7 +11,7 @@
 @font-face {
     font-family: 'helveticaneueroman';
     src: url('../../fonts/12_pt_helvetica_55_roman___05472-webfont.eot');
-    src: url('../../fonts/12_pt_helvetica_55_roman___05472-webfont.eot?#iefix') format('embedded-opentype'),
+    src: url('../../fonts/12_pt_helvetica_55_roman___05472-webfontd41dd41d.eot?#iefix') format('embedded-opentype'),
          url('../../fonts/12_pt_helvetica_55_roman___05472-webfont.woff') format('woff'),
          url('../../fonts/12_pt_helvetica_55_roman___05472-webfont.ttf') format('truetype'),
          url('../../fonts/12_pt_helvetica_55_roman___05472-webfont.svg#helveticaneueroman') format('svg');
@@ -21,7 +21,7 @@
 @font-face {
     font-family: 'trade_gothic_lhextended';
     src: url('../../fonts/trade_gothic_lh_extended-webfont.eot');
-    src: url('../../fonts/trade_gothic_lh_extended-webfont.eot?#iefix') format('embedded-opentype'),
+    src: url('../../fonts/trade_gothic_lh_extended-webfontd41dd41d.eot?#iefix') format('embedded-opentype'),
          url('../../fonts/trade_gothic_lh_extended-webfont.woff') format('woff'),
          url('../../fonts/trade_gothic_lh_extended-webfont.ttf') format('truetype'),
          url('../../fonts/trade_gothic_lh_extended-webfont.svg#trade_gothic_lhextended') format('svg');
@@ -31,7 +31,7 @@
 @font-face {
     font-family: 'brandon_reg';
     src: url('../../fonts/brandon_reg-webfont.eot');
-    src: url('../../fonts/brandon_reg-webfont.eot?#iefix') format('embedded-opentype'),
+    src: url('../../fonts/brandon_reg-webfontd41dd41d.eot?#iefix') format('embedded-opentype'),
          url('../../fonts/brandon_reg-webfont.woff') format('woff'),
          url('../../fonts/brandon_reg-webfont.ttf') format('truetype'),
          url('../../fonts/brandon_reg-webfont.svg#brandon_grotesque_regularRg') format('svg');
@@ -49,7 +49,7 @@
 @font-face {
     font-family: 'futult';
     src: url('../../fonts/futult.eot');
-    src: url('../../fonts/futult.eot?#iefix') format('embedded-opentype'),
+    src: url('../../fonts/futultd41dd41d.eot?#iefix') format('embedded-opentype'),
          url('../../fonts/futult.woff') format('woff'),
          url('../../fonts/futult.ttf') format('truetype'),
          url('../../fonts/futult.svg#futult') format('svg');
@@ -299,7 +299,7 @@ nav{float:left;}
     overflow:hidden;
     white-space:nowrap;
     text-indent:100%;
-    background:url(../../img/bg-slider-nav01.png) no-repeat;
+    background:url(../../img/bg-slider-nav01.html) no-repeat;
     width:15px;
     height:24px;
     position:absolute;
@@ -482,6 +482,7 @@ nav{float:left;}
     max-width:1360px;
     margin:0 auto;
     padding:0 30px;
+    background-color: #fff;
 }
 .page-content:after{
     content:'';
@@ -866,12 +867,12 @@ nav{float:left;}
 .apparel-totals-list li .test{
     /*border:1px solid #e1e3e8;*/
     padding:0 9px;
-    background:url(../../img/bg-apparel-count02.png) repeat-x;
+    background:url(../../img/bg-apparel-count02.html) repeat-x;
     height:47px;
     min-width:80px;
 }
 .apparel-totals-list li .count.diamond{
-    background:url(../img/bg-apparel-count01.png) no-repeat;
+    background:url(../img/bg-apparel-count01.html) no-repeat;
     width:67px;
     height:68px;
     text-align:center;
@@ -927,7 +928,7 @@ nav{float:left;}
 .apparel-links-list.odd li{background:#f3f3f3;}
 .apparel-links-list li.odd{float:right;}
 .apparel-links-list li:before{
-    background:url(../../img/bg-apparel-links.png) no-repeat -9999px -9999px;
+    background:url(../../img/bg-apparel-links.html) no-repeat -9999px -9999px;
     width:95px;
     height:94px;
     margin:0;
@@ -1417,7 +1418,7 @@ nav{float:left;}
     font:15px/18px brandon_reg, Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
-    background: url(../../img/img02.png) 0 2px no-repeat;
+    background: url(../../img/img02.html) 0 2px no-repeat;
     margin: 0 0 23px -57px;
     padding:6px 0 2px 57px;
     color: #333;
@@ -1457,6 +1458,11 @@ img.size-full{
     width: 100%;
     height: auto;
 }
+
+.nav-btn {
+    display: none;
+}
+
 /* Media Queries */
 @media screen and (max-width:1300px){
     .nav-menu{margin-left:10px;}
@@ -1476,4 +1482,148 @@ img.size-full{
         margin-left:0;
     }
     .flexslider.logo-slider{width: 800px;}
+}
+
+@media screen and (max-width:1024px){
+
+    .secondary-nav-holder {
+        display: none;
+    }
+
+ 
+
+    .twocolumns {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+     .page-content .twocolumns .column {
+        width: 100%;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 0px 0 0;
+        font-size: 80%;
+    }
+
+
+
+    .careers-list {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .careers-list li {
+        width: 100%;
+    }
+
+    .page-content-holder {
+        margin: 0px;
+    }
+
+    .plan-list-holder {
+        width: 100%;
+        overflow: hidden;
+        min-width: 100%;
+    }
+ 
+    .plan-list-holder ul li{
+        width: 50%;
+    }
+
+    .column-holder img {
+        margin-bottom: 20px;
+    }
+
+   .column-holder {
+        padding: 0 0 0 0px !important;
+    }
+
+    .main-navigation {
+        position: relative;
+    }
+
+    .menu-main-nav-container {
+        position: fixed;
+        right: 0;
+        top: 0;
+        background-color: #fcfffea2;
+        height: 100vh;
+        width: 180px;
+        margin-right: -180px;
+        transition: margin-right 0.3s;
+        display: flex;
+    }
+
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .nav-menu li {
+        display: inline-flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: end;
+        position: relative;
+    }
+
+    .nav-menu > li > a,
+    .nav-menu > li > span{
+
+        padding:5px 8px;
+        color:#369;
+        height:29px;
+    }
+
+    .menu-show {
+        display: block;
+        overflow: hidden;
+    }
+
+    .nav-menu > li .sub-menu {
+        display:none;
+        position: relative;
+        flex-direction: column;
+        background-color: rgba(32, 32, 32, 0.247);
+        top: 0px;
+        left: 0px;
+    }
+
+    .nav-btn {
+        display: block;
+        height: 24px;
+        width: 24px;
+        justify-self: flex-end;
+        position: fixed;
+        right: 180px;
+        right: 16px;
+        top: 16px;
+        transition: right .3s ;
+    }
+
+    .menu-item-has-children {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-menu > li:hover > a, .nav-menu > li:hover > span, .nav-menu > li.current_page_parent > a, .nav-menu > li.current_page_parent > span, .nav-menu > li.current_page_item > a, .nav-menu > li.current_page_item > span {
+        color: #000;
+        opacity: 1 !important;
+        /* background: url(../img/bg-nav.png); */
+        background-color: rgba(32, 32, 32, 0.247);
+    }
+
+    .nav-btn-active {
+        right: 180px;
+    }
+
+    .menu-active {
+        margin-right: 0px;
+    }
+
 }

@@ -1,0 +1,44 @@
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+
+
+
+
+<div id="main">
+
+  <div id="primary" class="site-content">
+    <div id="content" role="main">
+
+      <div class="main-image">
+        <img src="{% static 'img/frontend/content/pams_140820010045.png' %}" style="inline auto 100% 0px -113px" />
+      </div>
+      <div class="page-info">
+        <h2 class="page-heading">PRESS</h2>
+        
+          <div class="twocolumns"></div>
+          <div class="twocolumns"></div>
+        </div>
+      </div>
+
+      
+
+
+        {{ page.article|safe }}
+
+
+
+
+
+    
+    </div>
+  </div>
+</div>
+
+
+
+
+{% endblock %}

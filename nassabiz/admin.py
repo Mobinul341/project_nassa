@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.contrib.auth.models import Group
-from .models import BlogModel, NavModel, PrimaryNav, SecondNav, NavMenuModel
+from .models import BlogModel, NavModel, PrimaryNav, SecondNav, NavMenuModel, PressModel
 
 # Register your models here.
 admin.site.register(BlogModel)
@@ -18,6 +18,8 @@ class PrimaryNavAdmin(admin.ModelAdmin):
     inlines = [SubnavInline]
 
 admin.site.register(PrimaryNav, PrimaryNavAdmin)
+
+admin.site.register(PressModel)
 
 @admin.register(NavMenuModel)
 class NavMenuAdmin(admin.ModelAdmin):

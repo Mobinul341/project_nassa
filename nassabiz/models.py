@@ -1,3 +1,4 @@
+import datetime
 from django.db import models
 from .navmanager import PrimaryNavManager, SecondaryNavManager
 from ckeditor.fields import RichTextField
@@ -55,4 +56,10 @@ class NavMenuModel(models.Model):
     def __str__(self):
         return self.name    
 
-
+class PressModel(models.Model):
+    press_title = models.CharField(max_length = 200)
+    press_body = models.CharField(max_length=400, blank=True, null=True)
+    press_date = models.DateField(auto_now_add = True)
+    
+    def __str__(self):
+        return self.press_title + " | "+ str(self.press_date)
